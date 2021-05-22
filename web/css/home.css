@@ -150,43 +150,8 @@ h3{font-size: var(--fs-h3);}
 
 /*nav{display: none;}*/
 
-
-
-.poster-slider{
-    position: relative;
-   
-}
-
-
-@media(min-width: 600px){
-    .poster-slider{
-        display: grid;
-        width: 500px;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-        "img title"
-        "img subtitle";
-        grid-template-columns: min-content max-content;
-    
-    }
-    .poster-slider-img{
-        box-shadow: var(--bs);
-        
-        grid-area: img;
-        min-width: 250px;
-        
-        position: relative;
-       
-    }
-    
-   
-}
-
-
-
-
 /*header*/
+
 
 header{
    display: flex;
@@ -288,6 +253,67 @@ header{
 .hamburger::after{bottom: 6px;}
 
 
+/*slider*/
 
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{
+    border: 2px solid var(--clr-accent);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background: var(--clr-accent);
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
 
 

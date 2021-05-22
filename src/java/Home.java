@@ -82,16 +82,45 @@ public class Home extends HttpServlet {
 "        <a href=\"#news\">Home Appliances</a>\n" +
 "        <a href=\"#contact\">Mobiels</a>\n" +
 "    </div>\n" +
-"\n" +
-"    <!--poster slider-->\n" +
+"\n"
+                    + " <!--poster slider-->\n" +
 "   \n" +
 "    \n" +
-"    <section class=\"poster-slider\" >\n" +
-"        \n" +
-"      <a class=\"poster-slider-img\" href=\"\">\n" +
-"          <img src=\"images/images.png\" alt=\"poster\">\n" +
-"      </a>\n" +
-"    </section>\n" +
+"    <section style=\"align-items: center; justify-content: center;\" >\n" +
+"       <div class=\"slider\">\n" +
+"           <div class=\"slides\">\n" +
+"               <input type=\"radio\" name=\"radio-btn\" id=\"radio1\">\n" +
+"               <input type=\"radio\" name=\"radio-btn\" id=\"radio2\">\n" +
+"               <input type=\"radio\" name=\"radio-btn\" id=\"radio3\">\n" +
+"               <input type=\"radio\" name=\"radio-btn\" id=\"radio4\">\n" +
+"               <div class=\"slide first\">\n" +
+"                   <img src=\"images/1.jpg\" alt=\"\">\n" +
+"               </div>\n" +
+"               <div class=\"slide\">\n" +
+"                <img src=\"images/2.jpg\" alt=\"\">\n" +
+"            </div>\n" +
+"            <div class=\"slide\">\n" +
+"                <img src=\"images/3.jpg\" alt=\"\">\n" +
+"            </div>\n" +
+"            <div class=\"slide\">\n" +
+"                <img src=\"images/4.jpg\" alt=\"\">\n" +
+"            </div>\n" +
+"            <div class=\"navigation-auto\">\n" +
+"                <div class=\"auto-btn1\"></div>\n" +
+"                <div class=\"auto-btn2\"></div>\n" +
+"                <div class=\"auto-btn3\"></div>\n" +
+"                <div class=\"auto-btn4\"></div>\n" +
+"            </div>\n" +
+"           </div>\n" +
+"           <div class=\"navigation-manual\">\n" +
+"               <label for=\"radio1\" class=\"manual-btn\"></label>\n" +
+"               <label for=\"radio2\" class=\"manual-btn\"></label>\n" +
+"               <label for=\"radio3\" class=\"manual-btn\"></label>\n" +
+"               <label for=\"radio4\" class=\"manual-btn\"></label>\n" +
+"           </div>\n" +
+"       </div> \n" +
+"      \n" +
+"    </section>" +
 "\n" +
 "\n" +
 "   \n" +
