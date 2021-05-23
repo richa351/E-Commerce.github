@@ -31,7 +31,7 @@ public class Home extends HttpServlet {
                     + "<link rel=\"stylesheet\" type=\"text/css\" href=\"css/home.css\">");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Home at " + request.getContextPath() + "</h1>"
+            out.println(""
                     + "<header >\n" +
 "        <!--Logo for website -->\n" +
 "        <div class=\"logo\">\n" +
